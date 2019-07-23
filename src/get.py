@@ -4,7 +4,7 @@ import tkinter.messagebox
 import sys
 
 
-title = '日文文件乱码转换工具v0.2 by羊君'
+title = '日文文件乱码转换工具v0.2.1 by羊君'
 if not tkinter.messagebox.askyesno(title, '本工具只适用于简体中文系统，\
 请确保目录下均为日文文件名，是否继续？'):
     #询问用户允许
@@ -32,9 +32,7 @@ def change_code(file):
                 return file
     return file
 
-txtlist = []
-txtcount = 0
-#创建记录txt文件的list，同时记录txt文件数量
+
 l = 0
 for files in os.walk(cwd):
     #读取当前目录下所有文件/目录及子目录
@@ -50,10 +48,7 @@ for files in os.walk(cwd):
         new_name = os.path.join(files[0], change_code(file))
         if not old_name == new_name:
             os.rename(old_name, new_name)
-        if new_name[-4:] == '.txt':
-            txtlist.append(new_name)
-            txtcount += 1
-        #记录txt文件的路径
+        #不想考虑重名情况了，正常情况下不可能重名
     l += 1
 
 
@@ -75,6 +70,19 @@ for cnt in consorted0:
     new_path = os.path.join(cnt[0][:lst+1], change_code(cnt[0][lst+1:]))
     if not cnt[0] == new_path:
         os.rename(cnt[0], new_path)
+#以上为更改目录和文件名，下面开始修改txt文件内容
+
+
+txtlist = []
+txtcount = 0
+# 创建记录txt文件的list，同时记录txt文件数量
+for files in os.walk(cwd):
+    for file in files[-1]:
+        path_name = os.path.join(files[0], file)
+        if path_name[-4:] == '.txt':
+            txtlist.append(path_name)
+            txtcount += 1
+            # 记录txt文件的路径
 
 
 if tkinter.messagebox.askyesno(title, '已经检测到' + str(txtcount) + \

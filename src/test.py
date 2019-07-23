@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import os
 
 
 #k1 = s.encode('gbk')
@@ -7,5 +7,5 @@
 #k2 = k1.decode('Shift-JIS')
 #print(k2)
 
-fd = open('readme.txt', 'r', encoding='gb2312')
-print(fd.read())
+s = 'sss'
+print(s.rfind('.'))
