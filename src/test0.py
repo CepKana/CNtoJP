@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
+import chardet
 
-
-s = 'skdosssodk'
-print(s[:-1])
+s = '我的师姐'.encode('gbk')
+print(chardet.detect(s))
