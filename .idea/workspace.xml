@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f3ce2eb-e954-4420-a971-0ea9ec2d6b9d" name="CNtoJP" comment="v0.2版本，更改编码转换原则使得可以尽量完美识别代码，同时增加了txt编码更改功能。">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/get.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
-    </list>
+    <list default="true" id="9f3ce2eb-e954-4420-a971-0ea9ec2d6b9d" name="CNtoJP" comment="v0.2.1版本，更改编码转换原则使得可以尽量完美识别代码，同时增加了txt编码更改功能。" />
     <list id="54a2c58d-3e00-4c8c-b6ca-2ea1ff270953" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +14,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/get.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1458">
-              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+            <state relative-caret-position="462">
+              <caret line="41" column="35" lean-forward="true" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -82,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="585" />
     <option name="y" value="25" />
     <option name="width" value="980" />
@@ -94,7 +90,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,6 +106,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,6 +323,7 @@
       <workItem from="1563889977515" duration="1497000" />
       <workItem from="1563891567711" duration="1598000" />
       <workItem from="1563893311319" duration="41000" />
+      <workItem from="1563895054659" duration="898000" />
     </task>
     <task id="LOCAL-00001" summary="CNtoJP ver0.1&#10;first version, main code is in get.py.">
       <created>1563788585676</created>
@@ -363,11 +360,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563891622654</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v0.2.1版本，更改编码转换原则使得可以尽量完美识别代码，同时增加了txt编码更改功能。">
+      <created>1563895187056</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563895187056</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33109000" />
+    <option name="totallyTimeSpent" value="34007000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -379,9 +383,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16152816" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16353887" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -471,7 +476,8 @@
     <MESSAGE value="试了试chardet插件，但是不太好使所以改回去了。" />
     <MESSAGE value="测试了txt文件的转换，成功。" />
     <MESSAGE value="v0.2版本，更改编码转换原则使得可以尽量完美识别代码，同时增加了txt编码更改功能。" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.2版本，更改编码转换原则使得可以尽量完美识别代码，同时增加了txt编码更改功能。" />
+    <MESSAGE value="v0.2.1版本，更改编码转换原则使得可以尽量完美识别代码，同时增加了txt编码更改功能。" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.2.1版本，更改编码转换原则使得可以尽量完美识别代码，同时增加了txt编码更改功能。" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
@@ -524,8 +530,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/get.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1458">
-          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+        <state relative-caret-position="462">
+          <caret line="41" column="35" lean-forward="true" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
