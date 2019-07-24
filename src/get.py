@@ -3,7 +3,7 @@ import os
 import tkinter.messagebox
 import sys
 
-title = '日文文件乱码转换工具(CNtoJP)v0.2.1 by羊君'
+title = '日文文件乱码转换工具(CNtoJP)v0.2.2 by羊君'
 cwd = os.getcwd()
 # 获取当前目录
 
@@ -119,7 +119,7 @@ def txt_main():
 
 # 主函数
 if not tkinter.messagebox.askyesno(title, '本工具只适用于简体中文系统，\
-请确保目录下均为日文文件名，是否继续？\n使用前请务必保留备份！'):
+请确保该程序运行目录下均为日文文件名，是否继续？\n使用前请务必保留备份！'):
     # 询问用户允许
     sys.exit()
 else:
