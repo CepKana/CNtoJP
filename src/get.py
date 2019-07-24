@@ -3,7 +3,7 @@ import os
 import tkinter.messagebox
 import sys
 
-title = '日文文件乱码转换工具v0.2.1 by羊君'
+title = '日文文件乱码转换工具(CNtoJP)v0.2.1 by羊君'
 cwd = os.getcwd()
 # 获取当前目录
 
@@ -64,6 +64,7 @@ def filename_main():
         new_path = os.path.join(cnt[0][:lst + 1], change_code(cnt[0][lst + 1:]))
         if not cnt[0] == new_path:
             os.rename(cnt[0], new_path)
+    tkinter.messagebox.showinfo(title, '文件/目录名乱码转换成功！')
 
 
 # 以上为更改目录和文件名，下面开始修改txt文件内容
@@ -113,15 +114,16 @@ def txt_main():
                             new_file.close()
                     except UnicodeDecodeError:
                         pass
+            tkinter.messagebox.showinfo(title, 'txt文件转换成功！')
 
 
 # 主函数
 if not tkinter.messagebox.askyesno(title, '本工具只适用于简体中文系统，\
-请确保目录下均为日文文件名，是否继续？'):
+请确保目录下均为日文文件名，是否继续？\n使用前请务必保留备份！'):
     # 询问用户允许
     sys.exit()
 else:
     filename_main()
     txt_main()
-    tkinter.messagebox.showinfo(title, '转换成功！')
+    tkinter.messagebox.showinfo(title, '转换程序运行完毕，按确定键退出，感谢您的使用。')
     # 运行完成弹出提示窗口
