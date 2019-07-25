@@ -95,25 +95,21 @@ def txt_main():
         else:
             for i in txtlist:
                 try:
-                    txtfile = open(i, 'r', encoding='gb2312')
-                    txtfile.read()
-                    txtfile.close()
-                    # 只有当使用read时，python才会尝试decode
+                    with open(i, 'r', encoding='gb2312') as txtfile:
+                        txtfile.read()
+                        # 只有当使用read时，python才会尝试decode
                 except UnicodeDecodeError:
                     try:
-                        txtfile = open(i, 'r', encoding='Shift-JIS')
-                        txtfile0 = txtfile.read()
-                        txtfile.close()
+                        with open(i, 'r', encoding='Shift-JIS') as txtfile:
+                            txtfile0 = txtfile.read()
                         if ask:
-                            new_file = open(i, 'w+', encoding='utf-8')
-                            new_file.write(txtfile0)
-                            new_file.close()
+                            with open(i, 'w+', encoding='utf-8') as new_file:
+                                new_file.write(txtfile0)
                         else:
                             inew = i[0:-4] + '0' + i[-4:]
                             # 建立的新文件在原文件名后加0
-                            new_file = open(inew, 'w+', encoding='utf-8')
-                            new_file.write(txtfile0)
-                            new_file.close()
+                            with open(inew, 'w+', encoding='utf-8') as new_file:
+                                new_file.write(txtfile0)
                     except UnicodeDecodeError:
                         pass
             tkinter.messagebox.showinfo(title, 'txt文件转换成功！')
