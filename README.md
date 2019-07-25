@@ -1,5 +1,7 @@
 # CNtoJP
-这个工具用来将日文文件中的乱码转换为正确的日文，目前仅限简体中文系统。/This tool can fix Japanese garbled characters in files pruducing in the process of unzipping in the system in Simplified Chinese.
+这个工具用来将日文文件中的乱码转换为正确的日文，还可以将乱码的txt文件内容修正过来，目前仅限简体中文系统。
+
+This tool can fix Japanese garbled characters in files' name and txt files pruducing in the process of unzipping in the system in Simplified Chinese.
 
 如果你不知道在哪里下载，请点击[这里](https://github.com/CepKana/CNtoJP/releases)
 
@@ -11,12 +13,12 @@
 本程序可以一定程度上识别简体中文，但是无法保证100%不会将中文文件二次转码为乱码，故您应尽量只在运行目录内放入需要转换的文件。
 
 使用前切记备份源文件
-使用前切记备份源文件
-使用前切记备份源文件
-使用前切记备份源文件
+
 使用前切记备份源文件
 
-请勿对同一乱码文件多次转换，可能会造成文件名乱码。
+使用前切记备份源文件
+
+使用前切记备份源文件
 
 附带testbackup.7z，里面是示范用文件，可以事先尝试是否有效。
 倘若出现cpu占用高的问题，请打开任务管理器查看是否为杀毒软件扫描，可以考虑关闭杀软后运行。

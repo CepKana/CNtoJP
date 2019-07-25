@@ -6,7 +6,9 @@ import sys
 title = '日文文件乱码转换工具(CNtoJP)v0.2.2 by羊君'
 cwd = os.getcwd()
 # 获取当前目录
-
+root = tkinter.Tk()
+root.withdraw()
+# 隐藏主窗口，只显示对话框
 
 def change_code(file):
     # 修改文件名编码
