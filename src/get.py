@@ -16,13 +16,10 @@ def change_code(file):
         file.encode('gb2312')
     except UnicodeEncodeError:
         try:
-            file.encode('Shift-JIS')
-            return file
-        except UnicodeEncodeError:
+            return file.encode('gbk').decode('Shift-JIS')
+        except (UnicodeDecodeError, UnicodeEncodeError):
             try:
-                file1 = file.encode('gbk')
-                file2 = file1.decode('Shift-JIS')
-                return file2
+                return file.encode('gbk').decode('cp932')
             except(UnicodeDecodeError, UnicodeEncodeError):
                 return file
     return file
